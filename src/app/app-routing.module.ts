@@ -2,12 +2,12 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
 import { HomeComponent } from './template/home/home.component';
-import { FuncaoComponent } from './funcao/funcao.component';
+import { FuncaoListarComponent } from './funcao/funcao-listar/funcao-listar.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'home', component: HomeComponent },
-  { path: 'funcao', component: FuncaoComponent }
+  { path: 'funcao', component: FuncaoListarComponent }
 ];
 
 @NgModule({

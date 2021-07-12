@@ -1,1 +1,180 @@
-<app-root>loading</app-root>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>hoje.CAIXA</title>
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+  <!-- BEGIN: Vendor CSS-->
+  <link rel="stylesheet" type="text/css" href="assets/vendors/css/vendors.min.css">
+  <link rel="stylesheet" type="text/css" href="assets/vendors/css/tables/datatable/datatables.min.css">
+  <link rel="stylesheet" type="text/css" href="assets/vendors/css/pickers/pickadate/pickadate.css">
+  <link rel="stylesheet" type="text/css" href="assets/vendors/css/pickers/daterange/daterangepicker.css">
+  <link rel="stylesheet" type="text/css" href="assets/frest-template/assets/datepicker/css/bootstrap-datepicker.min.css"> <!--usado no caledario da agenda-->
+  <link rel="stylesheet" type="text/css" href="assets/vendors/css/forms/select/select2.min.css">
+  <!--<link rel="stylesheet" type="text/css" href="assets/vendors/css/editors/quill/quill.snow.css">-->
+  <link rel="stylesheet" type="text/css" href="assets/vendors/css/charts/apexcharts.css">
+  <!--<link rel="stylesheet" type="text/css" href="assets/vendors/css/extensions/dragula.min.css">-->
+  <link rel="stylesheet" type="text/css" href="assets/vendors/css/extensions/swiper.min.css">
+  <!--<link rel="stylesheet" type="text/css" href="assets/vendors/css/extensions/dragula.min.css">-->
+  <!-- END: Vendor CSS-->
+  <!-- BEGIN: Theme CSS-->
+  <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/bootstrap-extended.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/colors.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/components.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/themes/dark-layout.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/themes/semi-dark-layout.css">
+  <!-- END: Theme CSS-->
+
+  <!-- BEGIN: Page CSS-->
+  <link rel="stylesheet" type="text/css" href="assets/css/core/menu/menu-types/horizontal-menu.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/pages/dashboard-analytics.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/pages/page-user-profile.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/pages/app-todo.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/pages/faq.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/pages/app-email.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/plugins/extensions/swiper.css">
+  <!--<link rel="stylesheet" type="text/css" href="assets/css/plugins/extensions/drag-and-drop.css">-->
+  <!-- END: Page CSS-->
+
+  <!-- BEGIN: Custom CSS-->
+  <link rel="stylesheet" type="text/css" href="assets/frest-template/assets/css/fonts.css">
+  <link rel="stylesheet" type="text/css" href="assets/frest-template/assets/css/style-real.css">
+  <link rel="stylesheet" type="text/css" href="assets/frest-template/assets/css/profile.css">
+  <link rel="stylesheet" type="text/css" href="assets/governo/css/governo.css">
+  <link rel="stylesheet" type="text/css" href="assets/frest-template/assets/css/blocos.css">
+  <link rel="stylesheet" type="text/css" href="assets/frest-template/assets/fontawesome-5/css/all.css">
+  <!-- END: Custom CSS-->
+
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body class="horizontal-layout horizontal-menu navbar-sticky 2-columns footer-static mat-typography" data-open="hover"
+      data-menu="horizontal-menu" data-col="2-columns">
+<app-root></app-root>
+</body>
+
+<!--<script src="assets/vendors/js/vendors.min.js"></script>-->
+
+<script src="assets/js/core/libraries/jquery.min.js"></script>
+<script src="assets/js/core/libraries/bootstrap.min.js"></script>
+<!--<script src="assets/vendors/js/tables/datatable/dataTables.bootstrap4.min.js"></script>-->
+
+<!-- BEGIN: Page Vendor JS-->
+
+<script src="assets/frest-template/assets/js/jquery.mask.min.js"></script>
+
+<script src="assets/vendors/js/ui/jquery.sticky.js"></script>
+<script src="assets/vendors/js/pickers/pickadate/picker.js"></script>
+<script src="assets/vendors/js/pickers/pickadate/picker.date.js"></script>
+<script src="assets/vendors/js/pickers/pickadate/picker.time.js"></script>
+<script src="assets/vendors/js/pickers/pickadate/legacy.js"></script>
+<script src="assets/vendors/js/pickers/daterange/moment.min.js"></script>
+<script src="assets/vendors/js/pickers/daterange/daterangepicker.js"></script>
+<script src="assets/vendors/js/forms/select/select2.full.min.js"></script>
+<!--<script src="assets/vendors/js/editors/quill/quill.min.js"></script>-->
+<!--<script src="assets/vendors/js/extensions/dragula.min.js"></script>-->
+<script src="assets/vendors/js/extensions/swiper.min.js"></script>
+
+<script src="assets/vendors/js/tables/datatable/datatables.min.js"></script>
+<script src="assets/vendors/js/tables/datatable/dataTables.bootstrap4.min.js"></script>
+<script src="assets/vendors/js/tables/datatable/dataTables.buttons.min.js"></script>
+<script src="assets/vendors/js/tables/datatable/buttons.html5.min.js"></script>
+<script src="assets/vendors/js/tables/datatable/buttons.print.min.js"></script>
+<script src="assets/vendors/js/tables/datatable/buttons.bootstrap.min.js"></script>
+<script src="assets/vendors/js/tables/datatable/pdfmake.min.js"></script>
+<script src="assets/vendors/js/tables/datatable/vfs_fonts.js"></script>
+<!-- END: Page Vendor JS-->
+<!-- BEGIN: Theme JS-->
+<!--<script src="assets/js/scripts/configs/horizontal-menu.js"></script>-->
+<!--<script src="assets/js/core/app-menu.js"></script>-->
+<!--<script src="assets/js/core/app.js"></script>-->
+<script src="assets/js/scripts/components.js"></script>
+<script src="assets/js/scripts/footer.js"></script>
+<!--<script src="assets/js/scripts/extensions/drag-drop.js"></script>-->
+
+
+<!--<script src="assets/js/scripts/modal/components-modal.js"></script>
+<script src="assets/js/scripts/pages/dashboard-analytics.js"></script>-->
+
+
+<!-- END: Theme JS-->
+<!-- BEGIN: Page JS-->
+<script src="assets/js/scripts/pages/page-user-profile.js"></script>
+<!--<script src="assets/js/scripts/pages/app-todo.js"></script>-->
+<script src="assets/js/scripts/datatables/datatable.js"></script>
+<!--<script src="assets/frest-template/assets/datepicker/js/bootstrap-datepicker.min.js"></script>-->
+<script src="assets/vendors/js/charts/apexcharts.min.js"></script>
+<script src="assets/js/scripts/extensions/swiper.js"></script>
+<!-- END: Page JS-->
+
+<script src="assets/frest-template/assets/fontawesome-5/js/all.js"></script>
+
+
+<!-- DATATABLE -->
+
+<script src="assets/vendors/js/extensions/moment.min.js"></script>
+<!-- <script src="assets/sweetalert2/dist/promise.min.js"></script>
+<script src="assets/sweetalert2/dist/sweetalert2.min.js"></script> -->
+
+<!-- AUTOCOMPLETE -->
+<script src="assets/governo/plugins/jquery-EasyAutocomplete/jquery.easy-autocomplete.min.js"></script>
+
+<!-- GRAFICOS - HIGHCHARTS -->
+<script src="assets/governo/plugins/HighCharts/highcharts.js"></script>
+<script src="assets/governo/plugins/HighCharts/exporting.js"></script>
+<script src="assets/governo/plugins/HighCharts/export-data.js"></script>
+
+<!--PAGE GOVERNO-->
+<script src="assets/governo/js/governo/gov.360.js"></script>
+<script src="assets/governo/js/governo/gov.funcoes.js"></script>
+
+<!--MODALS-->
+<script src="assets/governo/js/governo/modais/gov._dadosCadastrais.js"></script>
+<script src="assets/governo/js/governo/modais/gov._oportunidades.js"></script>
+<script src="assets/governo/js/governo/modais/gov._redeBancaria.js"></script>
+<script src="assets/governo/js/governo/modais/gov._reuniPontosAtencao.js"></script>
+
+<script src="assets/governo/js/governo/modais/gov.captacao.faf.js"></script>
+<script src="assets/governo/js/governo/modais/gov.captacao.fiCdb.js"></script>
+<script src="assets/governo/js/governo/modais/gov.captacao.quota.js"></script>
+<script src="assets/governo/js/governo/modais/gov.captacao.rpps.js"></script>
+<script src="assets/governo/js/governo/modais/gov.cnpjs.vinculados.js"></script>
+<script src="assets/governo/js/governo/modais/gov.financiamento.contratado.js"></script>
+<script src="assets/governo/js/governo/modais/gov.financiamento.esteira.js"></script>
+<script src="assets/governo/js/governo/modais/gov.financiamento.obrasParalisadas.js"></script>
+<script src="assets/governo/js/governo/modais/gov.financiamento.sadipem.cdp.js"></script>
+<script src="assets/governo/js/governo/modais/gov.financiamento.sadipem.pvl.js"></script>
+<script src="assets/governo/js/governo/modais/gov.indicadores.rcl.captacao.js"></script>
+<script src="assets/governo/js/governo/modais/gov.indicadores.rcl.js"></script>
+<script src="assets/governo/js/governo/modais/gov.indicadores.rcl.mc.js"></script>
+<script src="assets/governo/js/governo/modais/gov.indicadores.rcl.rps.js"></script>
+<script src="assets/governo/js/governo/modais/gov.indicadores.siapc.credito.js"></script>
+<script src="assets/governo/js/governo/modais/gov.indicadores.roa.js"></script>
+<script src="assets/governo/js/governo/modais/gov.indicadores.servidores.js"></script>
+<script src="assets/governo/js/governo/modais/gov.repasse.ogu.js"></script>
+<script src="assets/governo/js/governo/modais/gov.repasse.paralisadas.js"></script>
+<script src="assets/governo/js/governo/modais/gov.servicos.arrecadacao.js"></script>
+<script src="assets/governo/js/governo/modais/gov.servicos.cobranca.js"></script>
+<script src="assets/governo/js/governo/modais/gov.servicos.consignado.js"></script>
+<script src="assets/governo/js/governo/modais/gov.servicos.folha.js"></script>
+<script src="assets/governo/js/governo/modais/gov.servicos.ppp.js"></script>
+<script src="assets/governo/js/governo/modais/gov.social.abono.js"></script>
+<script src="assets/governo/js/governo/modais/gov.social.bolsaFamilia.js"></script>
+<script src="assets/governo/js/governo/modais/gov.social.cotasPis.js"></script>
+<script src="assets/governo/js/governo/modais/gov.social.seguroDesemprego.js"></script>
+
+
+<!--MAPS-->
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA742AsoWldT2mpPqOfyr3CnzSQJqZ_950">
+</script>
+
+
+<!--TAB-->
+<script src="assets/js/scripts/navs/navs.js">
+</script>
+
+</html>
