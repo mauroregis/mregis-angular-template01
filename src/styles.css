@@ -1,1 +1,143 @@
-/* Add application styles & imports to this file! */
+html {
+  background-color: #f2f4f4 !important;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.codigo-erro {
+  color: lightgray;
+}
+
+.wrapper-content {
+  background: white;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/*.modal-body {
+    max-height: 43rem;
+}*/
+
+/** para add css para campos de datas */
+.ngb-dp-week.ngb-dp-weekdays .ngb-dp-weekday.small {
+  background-color: #fff;
+  color: #5bc0de !important;
+}
+.dropdown-menu .ngb-dp-header {
+  background-color: #fff;
+}
+.ngb-dp-week .btn-light {
+  background-color: #ffffff !important;
+  color: #4a4646 !important;
+}
+
+.ngb-dp-week .btn-light.hover,
+.ngb-dp-week .btn-light:active,
+.ngb-dp-week .btn-light.bg-primary.text-white {
+  color: #636363 !important;
+  font-weight: bold !important;
+}
+
+/**********************************************************
+* DRAGULA - INÍCIO
+***********************************************************/
+/* in-flight clone */
+.gu-mirror {
+  position: fixed !important;
+  margin: 0 !important;
+  z-index: 9999 !important;
+  opacity: 0.8;
+  -ms-filter: 'progid:DXImageTransform.Microsoft.Alpha(Opacity=80)';
+  filter: alpha(opacity=80);
+  pointer-events: none;
+}
+/* high-performance display:none; helper */
+.gu-hide {
+  left: -9999px !important;
+}
+/* added to mirrorContainer (default = body) while dragging */
+.gu-unselectable {
+  -webkit-user-select: none !important;
+  -moz-user-select: none !important;
+  -ms-user-select: none !important;
+  user-select: none !important;
+}
+/* added to the source element while its mirror is dragged */
+.gu-transit {
+  opacity: 0.2;
+  -ms-filter: 'progid:DXImageTransform.Microsoft.Alpha(Opacity=20)';
+  filter: alpha(opacity=20);
+}
+/**********************************************************
+* DRAGULA - FIM
+***********************************************************/
+
+/**********************************************************
+* Cores do Card que identifica um tipo de Indicador
+***********************************************************/
+.pn-azul {
+  background: #5e98b0;
+}
+
+.pn-verde {
+  background: #87bfb8;
+}
+
+.pn-roxo {
+  background: #b26f9b;
+}
+
+.pn-vermelho {
+  background: #fc8a76;
+}
+
+.pn-amarelo {
+  background: #ffc230;
+}
+/**********************************************************
+* Cores do Card que identifica um tipo de Indicador - Fim
+***********************************************************/
+
+/*** Link ***/
+.cl-link {
+  color: #00b5e5 !important;
+  border-bottom: 1px solid #00b5e5;
+  cursor: pointer;
+}
+.cl-link:hover {
+  opacity: 0.8;
+}
+
+/************** Alert personalizado Reagendamento Retorno -- inicio *****************/
+.alert-p {
+  position: absolute;
+  width: 280px;
+  bottom: 260px;
+  left: 85px;
+}
+.alert-img {
+  width: 90%;
+  margin-top: 30px;
+}
+.alert-icone {
+  width: 90px;
+}
+/************** Alert personalizado Reagendamento Retorno -- final *****************/
+
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Roboto, 'Helvetica Neue', sans-serif;
+}

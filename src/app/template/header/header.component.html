@@ -1,55 +1,81 @@
 <!-- BEGIN: Header -->
-<nav class="header-navbar navbar-expand-lg navbar navbar-with-menu navbar-fixed bg-primary navbar-brand-center">
-<div class="navbar-wrapper col-6 col-sm-3 col-md-3 col-lg-3 col-xl-2">
+<nav
+  class="header-navbar navbar-expand-lg navbar navbar-with-menu navbar-fixed bg-primary navbar-brand-center"
+>
+  <div class="navbar-wrapper col-6 col-sm-3 col-md-3 col-lg-3 col-xl-2">
     <div class="navbar-container content">
-        <div class="navbar-collapse row" id="navbar-mobile">
-            <div class="mr-auto float-left bookmark-wrapper d-flex align-items-center">
-                <img src="../../../assets/frest-template/app-assets/images/logo-hoje-caixa.png">
-            </div>
+      <div class="navbar-collapse row" id="navbar-mobile">
+        <div
+          class="mr-auto float-left bookmark-wrapper d-flex align-items-center"
+        >
+          <img src="../../../assets/img/logo-caixa-branco.png" />
         </div>
+      </div>
     </div>
-</div>
-<div class="navbar-header search-bar busca-container col-6 col-sm-3 col-md-2 col-lg-2 col-xl-2">
+  </div>
+  <div
+    class="navbar-header search-bar busca-container col-6 col-sm-3 col-md-2 col-lg-2 col-xl-2"
+  >
     <div class="row">
-        <ul class="nav navbar-nav float-left align-items-center">
-            <li class="dropdown dropdown-notification nav-item icone-top-left">
-                <a class="nav-link nav-link-label home" (click)="returnToHomePage()">
-                    <i class="fas fa-home" ></i>
-                </a>
-            </li>
-            <li class="dropdown dropdown-notification nav-item icone-top-left">
-                <a class="nav-link nav-link-label" href="#" data-toggle="dropdown">
-                    <i class="fas fa-bars fa-2x"></i>
-                    <span class="d-none d-sm-none col-md-block">
-                        menu
-                    </span>
-                </a>
-                <div class="dropdown-menu dropdown-menu-media dropdown-menu-right menu-principal">
-                    <ul>
-                        <li (click)="navigateTo('/novo-conecta')" *ngIf="isAcessoConecta"><a>Conecta Rede</a>
-                        </li>
-                        <!--<li (click)="navigateTo('/conecta')" *ngIf="isAcessoConecta"><a>Conecta Rede</a></li> -->
-                        <li (click)="navigateTo('/conquiste')" *ngIf="isAcessoConquiste"><a>Conquiste</a></li>
-                        <!--<li (click)="navigateTo('/negocios')" *ngIf="isAcessoRelatorios"><a>Negócios</a></li>-->
-                        <li *appResourcePermission="securityFunction.HOJ500_PRIORIZACAO_DE_CARDS_VISUALIZAR_MAPA_E_MENU"
-                            (click)="navigateTo('/priorizacao')">
-                            <a>Priorização</a>
-                        </li>
-                      <li *appResourcePermission="securityFunction.HOJ509_RELATORIO_PRIORIZACAO" (click)="navigateTo('/priorizacao-relatorio')" ><a>Relatório de Priorização</a></li>
-                        <li data-toggle="modal" data-target="#modal-produtos"><a>Produtos</a></li>
-                      <li *appResourcePermission="securityFunction.HOJ510_PARAMETRIZACAO" [routerLink]="['/parametrizacao']"><a>Parametrização</a></li>
-                        <li (click)="logout()"><a>Logout</a></li>
-                    </ul>
-                </div>
-            </li>
-        </ul>
-
+      <ul class="nav navbar-nav float-left align-items-center">
+        <li class="dropdown dropdown-notification nav-item icone-top-left">
+          <a class="nav-link nav-link-label home" (click)="returnToHomePage()">
+            <i class="fas fa-home"></i>
+          </a>
+        </li>
+        <li class="dropdown dropdown-notification nav-item icone-top-left">
+          <a class="nav-link nav-link-label" href="#" data-toggle="dropdown">
+            <i class="fas fa-bars fa-2x"></i>
+            <span class="d-none d-sm-none col-md-block">
+              menu
+            </span>
+          </a>
+          <div
+            class="dropdown-menu dropdown-menu-media dropdown-menu-right menu-principal"
+          >
+            <ul>
+              <li (click)="navigateTo('/novo-conecta')" *ngIf="isAcessoConecta">
+                <a>Conecta Rede</a>
+              </li>
+              <!--<li (click)="navigateTo('/conecta')" *ngIf="isAcessoConecta"><a>Conecta Rede</a></li> -->
+              <li (click)="navigateTo('/conquiste')" *ngIf="isAcessoConquiste">
+                <a>Conquiste</a>
+              </li>
+              <!--<li (click)="navigateTo('/negocios')" *ngIf="isAcessoRelatorios"><a>Negócios</a></li>-->
+              <!-- <li
+                *appResourcePermission="securityFunction.HOJ500_PRIORIZACAO_DE_CARDS_VISUALIZAR_MAPA_E_MENU"
+                (click)="navigateTo('/priorizacao')"
+              >
+                <a>Priorização</a>
+              </li> -->
+              <!-- <li
+                *appResourcePermission="securityFunction.HOJ509_RELATORIO_PRIORIZACAO"
+                (click)="navigateTo('/priorizacao-relatorio')"
+              >
+                <a>Relatório de Priorização</a>
+              </li> -->
+              <li data-toggle="modal" data-target="#modal-produtos">
+                <a>Produtos</a>
+              </li>
+              <!-- <li
+                *appResourcePermission="securityFunction.HOJ510_PARAMETRIZACAO"
+                [routerLink]="['/parametrizacao']"
+              >
+                <a>Parametrização</a>
+              </li> -->
+              <li (click)="logout()"><a>Logout</a></li>
+            </ul>
+          </div>
+        </li>
+      </ul>
     </div>
-</div>
+  </div>
 
-<div class="navbar-header search-bar busca-container col-12 col-sm-6 col-md-7 col-lg-7 col-xl-8">
+  <div
+    class="navbar-header search-bar busca-container col-12 col-sm-6 col-md-7 col-lg-7 col-xl-8"
+  >
     <div class="row">
-        <!--<div class="col-3 col-sm-3 col-md-3 col-lg-2 col-xl-2">
+      <!--<div class="col-3 col-sm-3 col-md-3 col-lg-2 col-xl-2">
             <ul class="nav navbar-nav float-left align-items-center">
                 <li class="dropdown dropdown-notification nav-item icone-top-left">
                     <a class="nav-link nav-link-label home" (click)="returnToHomePage()">
@@ -82,29 +108,31 @@
             </ul>
         </div>-->
 
-        <!-- input search -->
-         <div class="col-10">
-            <form (ngSubmit)="buscar()">
-                <fieldset class="search-input position-relative has-icon-left">
-                    <input class="form-control rounded-right form-control-md barra-busca" id="searchbar"
-                        [(ngModel)]="textoBusca" [ngModelOptions]="{standalone: true}"
-                        placeholder="Busque por CPF ou CNPJ" type="search" />
+      <!-- input search -->
+      <div class="col-10">
+        <form (ngSubmit)="buscar()">
+          <fieldset class="search-input position-relative has-icon-left">
+            <input
+              class="form-control rounded-right form-control-md barra-busca"
+              id="searchbar"
+              [(ngModel)]="textoBusca"
+              [ngModelOptions]="{standalone: true}"
+              placeholder="Busque por CPF ou CNPJ"
+              type="search"
+            />
 
-                    <div class="form-control-position pointer" (click)="buscar()">
-                        <i class="fas fa-search"></i>
-                    </div>
-                </fieldset>
-            </form>
+            <div class="form-control-position pointer" (click)="buscar()">
+              <i class="fas fa-search"></i>
+            </div>
+          </fieldset>
+        </form>
+      </div>
+      <!--/ input search -->
 
-        </div>
-        <!--/ input search -->
-
-        <div class="col-2 cl-app-version">
-            <span>{{appVersion}}</span>
-        </div>
-
+      <div class="col-2 cl-app-version">
+        <span>{{appVersion}}</span>
+      </div>
     </div>
-</div>
+  </div>
 </nav>
 <!-- END: Header-->
-
